@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <!--------------Nav logo--------------->
+        <div class="nav-tittle">
+            <img src="./img/logo.png" alt="logo picture">
+        </div>
+        <!------------------Nva ber button------->
+        <div class="nav-btn">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about me</a></li>
+                <li><a href="#">profolio</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">hire me</a></li>
+                <div class="icon">
+                    <img src="moon.png" alt="moon png" style="width: 30px;" id="icon">
+                </div>
+            </ul>
+        </div>
+    </header>
+    <!--------------------main container----------->
+    <main>
+        <div class="item">
+            <div class="items1">
+                <div class="box1">
+                <h1>I"M <span>Kate</span> Amelia</h1>
+                <p>I am a professional web devloper and designer iam design modern website using <span>js</span> and <span >React . </span></p>
+                <button>Downlaod Cv</button>
+                </div>
+                <div class="box2">
+                    <div class="icon">
+
+                    </div>
+                </div>
+            </div>
+            <div class="items2">
+                
+               <img src="./img/pattern.png" srcset="pattern picture" class="img1">
+
+                 <img src="./img/girl.png" alt="gils picture" class="img2">
+                
+            </div>
+        </div>
+    </main>
+    <script>
+        let icon = document.getElementById('icon');
+            icon.onclick = function(){
+                document.body.classList.toggle('dark-them');
+                if(document.body.classList.contains("dark-them")){
+                    icon.src = "sun.png";
+                }
+
+                else{
+                    icon.src = 'moon.png';
+                }
+            }
+    </script>
+</html>

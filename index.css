@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+    --bg-color: rgba(250, 255, 255, 0.684);
+    --secondary-color: rgb(255, 77, 0);
+    --black-color:black;
+    --white-color: #fff;
+    --grey : grey;
+} 
+.dark-them{
+    --bg-color: rgb(0, 0, 0);
+    --secondary-color: rgb(213, 81, 33);
+    --black-color:rgb(255, 255, 255);
+    --white-color: #000000;
+    --grey : rgb(217, 217, 217);
+
+}
+body{
+    padding: 20px 100px 0px 100px;
+    background-color:var(--bg-color);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-tittle img{
+    width: 70px;
+    color: var(--secondary-color);
+}
+.nav-btn ul {
+    display: flex;
+    align-items: center;
+}
+.nav-btn ul li {
+    list-style: none;
+    padding: 0px 20px;
+}
+.nav-btn ul li a{
+    
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+.nav-btn ul .icon{
+    cursor: pointer;
+}
+.nav-btn ul li a:hover{
+    color:var(--secondary-color);
+    transition: .2s all linear;
+}
+.item{
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    overflow: hidden;
+}
+.items1, .items2{
+    flex-grow: 1;
+    /* border: 1px solid; */
+}
+.box1 h1,p,button{
+    margin-top: 20px;
+}
+span{
+    color:var(--secondary-color);
+}   
+.box1 h1{
+    font-size: 36px;
+    color: var(--black-color);
+}
+.box1 p{
+    max-width: 500px;
+    /* border: 1px solid; */
+    font-size: 15px;
+    color: var(--grey);
+}
+button{
+    background-color:var(--black-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(27, 26, 26);
+    /* color: var(--black-color); */
+    color: #fff;
+}   
+.items2{
+   position: relative;
+}
+.items2 img{
+    width: 300px;
+}
+.items2 .img1{
+    width: 350px;
+    position: absolute;
+    top: 120px;
+    z-index: -1;
+}
+
+
+
+.items2  .img2{
+  margin-top: 150px;
+    width: 350px;
+}
